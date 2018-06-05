@@ -1,0 +1,22 @@
+<databaseChangeLog 
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd 
+   http://www.liquibase.org/xml/ns/dbchangelog 
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+     
+    <changeSet author="mrtu" id="3">
+        <createTable tableName="time">
+            <column name="time_id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="year" type="int"/>
+            <column name="month" type="int"/>
+            <column name="quater" type="int"/>
+            <column name="create_at" type="datetime"/>
+            <column name="modified_at" type="datetime"/>
+        </createTable>
+    </changeSet>   
+</databaseChangeLog>
