@@ -7,4 +7,5 @@ import com.example.demo.model.Products;
 
 @Component
 public interface productlist extends JpaRepository<Products, Long> {
+	
 }
