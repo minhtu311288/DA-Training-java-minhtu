@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 import java.util.Date;
+import java.util.UUID;
 
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
@@ -10,7 +11,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 public class Productcassandra{
 	@PrimaryKey
 	@Column("product_id")
-	private int product_id;
+	private UUID product_id;
 	@Column("item")
 	private int item;
 	@Column("inventory")
@@ -21,10 +22,19 @@ public class Productcassandra{
 	private Date modified_at;
 	@Column("class_field")
 	private String class_field;
-	public int getProduct_Id() {
+	public Productcassandra() {
+	}
+	public Productcassandra(UUID uuid, int item, String inventory,String class_field, Date date, Date date2) {
+		this.product_id =uuid;
+		this.item=item;
+		this.inventory=inventory;
+		this.modified_at=date2;
+		this.create_at=date;
+	}
+	public UUID getProduct_Id() {
         return product_id;
     }
-    public void setiProduct_id(int product_id) {
+    public void setiProduct_id(UUID product_id) {
         this.product_id = product_id;
     }
 	public int getItem() {

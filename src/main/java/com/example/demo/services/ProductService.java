@@ -5,5 +5,6 @@ import java.util.List;
 import com.example.demo.model.Products;
 
 public interface ProductService {
-	List<Products> listAll();
+	List<Products> findAll();
+//	String save();
 }

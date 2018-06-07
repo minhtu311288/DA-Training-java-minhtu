@@ -9,7 +9,7 @@
      
     <changeSet author="mrtu" id="2">
         <createTable tableName="location">
-            <column name="location_id" type="int" autoIncrement="true">
+            <column name="location_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="country" type="varchar(50)"/>

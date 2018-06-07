@@ -9,7 +9,7 @@
      
     <changeSet author="mrtu" id="3">
         <createTable tableName="time">
-            <column name="time_id" type="int" autoIncrement="true">
+            <column name="time_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="year" type="int"/>

@@ -9,7 +9,7 @@
      
     <changeSet author="mrtu" id="1">
         <createTable tableName="product">
-            <column name="product_id" type="int" autoIncrement="true">
+            <column name="product_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="item" type="int"/>

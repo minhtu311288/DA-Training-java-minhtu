@@ -9,13 +9,13 @@
      
     <changeSet author="mrtu" id="4">
         <createTable tableName="sales">
-            <column name="product_id" type="int" autoIncrement="true">
+            <column name="product_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="location_id" type="int" autoIncrement="true">
+            <column name="location_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="time_id" type="int" autoIncrement="true">
+            <column name="time_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="dollars" type="int"/>
