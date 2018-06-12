@@ -7,6 +7,8 @@ import com.example.demo.model.Products;
 import com.example.demo.respo.productlist;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -24,6 +26,12 @@ public class ProductServiceImpl implements ProductService {
 		List<Products> products = (List<Products>) listproduct.findAll();
 		return products;
 	}
+    @Override
+    public Optional<Products> findById(UUID UUID) {
+    	Optional<Products> products = listproduct.findById(UUID);
+    	if (!products.isPresent()) return null;
+		return products;
+    }
 //    @Override
 //	public String save(){
 //		UUID uuid = UUID.randomUUID();

@@ -16,17 +16,17 @@ public class SaleForeignKey implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@NotNull
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Products product;
 	
 	@NotNull
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "time_id")
     private Times time;
 	
 	@NotNull
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "location_id")
     private Locations location;
 }

@@ -88,4 +88,10 @@ public class Products {
 	public void setModified_at(Date modified_at) {
 		this.modified_at = modified_at;
 	}
+	@Override
+	public String toString() {
+		return "Products [product_id=" + product_id + ", item=" + item + ", class_field=" + class_field + ", inventory="
+				+ inventory + ", create_at=" + create_at + ", modified_at=" + modified_at + "]";
+	}
+	
 }

@@ -8,5 +8,4 @@ import com.example.demo.model.Products;
 
 @Repository
 public interface productlist extends JpaRepository<Products, UUID> {
-	
 }
