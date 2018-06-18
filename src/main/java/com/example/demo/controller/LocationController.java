@@ -17,19 +17,32 @@ import com.example.demo.model.Locations;
 import com.example.demo.services.LocationService;
 
 
-@RestController
-public class locationcontroller {
+@RestController(value = LocationController.BASE_URL)
+public class LocationController extends BaseController {
+	public static final String BASE_URL = "/location/";
+	
+	public static final String GET_LOCATION_BY_ID_URL = "/{id}";
+	
+	public static final String ADD_LOCATION = "/addlocation";
+	
+	public static final String All_LOCATION = "/all";
 	@Autowired
 	LocationService locationservice;
 	
-	@RequestMapping(value="/locations/", method = RequestMethod.GET)
+	@RequestMapping(value = BASE_URL + All_LOCATION,method = RequestMethod.GET)
 	public List<Locations> listLocations(){
+		
 		return locationservice.findAll();
+		
     }
-	@RequestMapping(value = "/location/{id}")
+	
+	@RequestMapping(value = BASE_URL + GET_LOCATION_BY_ID_URL,method = RequestMethod.GET)
 	public ResponseEntity<Optional<Locations>> getLocationByID(@PathVariable("id") UUID UUID)throws Exception{
+		
 		Optional<Locations> location =  locationservice.findById(UUID);
+		
 		if (location == null) throw new LocationNotFoundException("not found location!");
+		
 		return new ResponseEntity<Optional<Locations>>(location, HttpStatus.OK);
 	}
 }

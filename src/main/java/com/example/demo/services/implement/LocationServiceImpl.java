@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.example.demo.services.implement;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,20 +9,27 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Locations;
 import com.example.demo.respo.locationlist;
+import com.example.demo.services.LocationService;
 @Service
 public class LocationServiceImpl implements LocationService  {
+	
 	@Autowired
 	private locationlist locationList;
 
 	@Override
 	public List<Locations> findAll() {
+		
 		List<Locations> locations = (List<Locations>) locationList.findAll();
+		
 		return locations;
 	}
 	 @Override
 	    public Optional<Locations> findById(UUID UUID) {
+		 
 	    	Optional<Locations> locations = locationList.findById(UUID);
+	    	
 	    	if (!locations.isPresent()) return null;
+	    	
 			return locations;
 	    }
 }

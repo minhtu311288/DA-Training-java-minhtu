@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-<head>
-<title>Security with Spring Boot</title>
-</head>
-<body>
-	<h1>Hello, This is Home page!</h1>
-	<a style="color: blue" th:href="@{/user}">User Page</a>
-	<br />
-	<a style="color: blue" th:href="@{/admin}">Admin Page</a>
-</body>
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title th:utext="${title}"></title>
+   </head>
+    
+   <body>
+    
+      <!-- Include _menu.html -->
+      <th:block th:include="/_menu"></th:block>  
+       
+      <h2>Message : <span th:utext="${message}"></span></h2>
+       
+   </body>
 </html>

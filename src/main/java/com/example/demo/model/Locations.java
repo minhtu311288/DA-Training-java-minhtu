@@ -1,6 +1,5 @@
 package com.example.demo.model;
 
-import java.util.Date;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -13,6 +12,7 @@ import org.joda.time.DateTime;
 @Entity
 @Table(name="location")
 public class Locations {
+	
 	@Id
 	@Column(name = "location_id")
 	private UUID location_id;
@@ -30,13 +30,13 @@ public class Locations {
 	@Column(name = "modified_at")
 	private DateTime modified_at;
 	
-	
-	
 	public UUID getLocation_id() {
 		return location_id;
 	}
+	
 	public Locations() {
 	}
+	
 	public Locations(UUID location_id, String country, String city, DateTime create_at, DateTime modified_at) {
 		this.location_id = location_id;
 		this.country = country;

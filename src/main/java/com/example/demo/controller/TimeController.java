@@ -11,13 +11,20 @@ import com.example.demo.model.Times;
 import com.example.demo.services.TimeService;
 
 
-@RestController
-public class timecontroller {
+@RestController(value = TimeController.BASE_URL)
+public class TimeController extends BaseController {
+	
+	public static final String BASE_URL = "/time/";
+	
+	public static final String All_TIME = "/all";
+	
 	@Autowired
 	TimeService timeservice;
 	
-	@RequestMapping(value="/time/", method = RequestMethod.GET)
+	@RequestMapping(value = BASE_URL + All_TIME,method = RequestMethod.GET)
 	public List<Times> listTimes(){
+		
 		return timeservice.findAll();
+		
     }
 }
