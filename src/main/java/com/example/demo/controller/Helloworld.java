@@ -9,11 +9,6 @@ import com.example.demo.exception.ForbiddenException;
 @RestController
 public class Helloworld {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Helloworld.class);
-	@RequestMapping("/")
-	public String handleRequest() throws RuntimeException {
-		LOGGER.debug("This is homepage");
-		return "hello world";
-	  }
 	@RequestMapping("/admin")
 	  public void handleAdminRequest() throws ForbiddenException {
 	      throw new ForbiddenException("The requested page is forbidden");

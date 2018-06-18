@@ -19,6 +19,8 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="dollars" type="int"/>
+            <column name="create_at" type="datetime"/>
+            <column name="modified_at" type="datetime"/>
         </createTable>
     </changeSet>   
 </databaseChangeLog>

@@ -1,11 +1,13 @@
 package com.example.demo.services;
 
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Products;
 import com.example.demo.respo.productlist;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -32,11 +34,11 @@ public class ProductServiceImpl implements ProductService {
     	if (!products.isPresent()) return null;
 		return products;
     }
-//    @Override
-//	public String save(){
-//		UUID uuid = UUID.randomUUID();
-//		Products pr = new Products(uuid,1, "class field","inven", new Date(), new Date());
-//		productList.save(pr);
-//		return uuid.toString();
-//	}
+    @Override
+	public String save(){
+		UUID uuid = UUID.randomUUID();
+		Products pr = new Products(uuid,1, "class field","inven", new Date(), new Date());
+		listproduct.save(pr);
+		return uuid.toString();
+	}
 }

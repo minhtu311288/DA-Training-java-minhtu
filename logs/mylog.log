@@ -1,79 +1,35 @@
-"2018-06-14 14:15:02 - Starting SpringDemoWebApplication on nminhtu with PID 10332 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 14:15:02 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 14:15:02 - No active profile set, falling back to default profiles: default
-""2018-06-14 14:15:05 - Started SpringDemoWebApplication in 2.663 seconds (JVM running for 3.138)
-""2018-06-14 14:15:47 - This is DEBUG
-""2018-06-14 14:15:47 - This is INFO
-""2018-06-14 14:15:47 - This is WARN
-""2018-06-14 14:15:47 - This is ERROR
-""2018-06-14 14:17:34 - Starting SpringDemoWebApplication on nminhtu with PID 9412 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 14:17:34 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 14:17:34 - No active profile set, falling back to default profiles: default
-""2018-06-14 14:17:37 - Started SpringDemoWebApplication in 2.652 seconds (JVM running for 3.128)
-""2018-06-14 14:17:42 - This is homepage
-""2018-06-14 14:19:51 - Starting SpringDemoWebApplication on nminhtu with PID 7256 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 14:19:51 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 14:19:51 - No active profile set, falling back to default profiles: default
-""2018-06-14 14:19:54 - Started SpringDemoWebApplication in 2.615 seconds (JVM running for 3.068)
-""2018-06-14 14:20:10 - Product not found!
-""2018-06-14 14:21:58 - Starting SpringDemoWebApplication on nminhtu with PID 3960 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 14:21:58 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 14:21:58 - No active profile set, falling back to default profiles: default
-""2018-06-14 14:22:00 - Started SpringDemoWebApplication in 2.601 seconds (JVM running for 3.036)
-""2018-06-14 14:22:11 - Internal Server Error!
-""2018-06-14 14:31:30 - Starting SpringDemoWebApplication on nminhtu with PID 6028 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 14:31:30 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 14:31:30 - No active profile set, falling back to default profiles: default
-""2018-06-14 14:31:32 - Started SpringDemoWebApplication in 2.77 seconds (JVM running for 3.261)
-""2018-06-14 14:37:52 - Internal Server Error!
-""2018-06-14 14:38:00 - Product not found!
-""2018-06-14 14:38:50 - Starting SpringDemoWebApplication on nminhtu with PID 224 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 14:38:50 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 14:38:50 - No active profile set, falling back to default profiles: default
-""2018-06-14 14:38:52 - Started SpringDemoWebApplication in 2.601 seconds (JVM running for 3.075)
-""2018-06-14 14:39:03 - start find product by id
-""2018-06-14 14:39:03 - Product not found!
-""2018-06-14 15:09:01 - Starting SpringDemoWebApplication on nminhtu with PID 9340 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 15:09:02 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 15:09:02 - No active profile set, falling back to default profiles: default
-""2018-06-14 15:09:51 - Starting SpringDemoWebApplication on nminhtu with PID 10284 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 15:09:51 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 15:09:51 - No active profile set, falling back to default profiles: default
-""2018-06-14 15:12:22 - Starting SpringDemoWebApplication on nminhtu with PID 13508 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 15:12:22 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 15:12:22 - No active profile set, falling back to default profiles: default
-""2018-06-14 15:15:07 - Starting SpringDemoWebApplication on nminhtu with PID 6468 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 15:15:07 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 15:15:07 - No active profile set, falling back to default profiles: default
-""2018-06-14 15:15:58 - Starting SpringDemoWebApplication on nminhtu with PID 11936 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 15:15:58 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 15:15:58 - No active profile set, falling back to default profiles: default
-""2018-06-14 15:16:00 - Started SpringDemoWebApplication in 2.591 seconds (JVM running for 3.048)
-""2018-06-14 15:16:13 - This is homepage
-""2018-06-14 15:16:17 - start find product by id
-""2018-06-14 15:16:18 - End find product by id
-""2018-06-14 15:27:47 - start find product by id
-""2018-06-14 15:27:47 - Product not found!
-""2018-06-14 15:27:59 - start find product by id
-""2018-06-14 15:27:59 - End find product by id
-""2018-06-14 15:29:45 - Internal Server Error!
-""2018-06-14 15:29:50 - Internal Server Error!
-""2018-06-14 15:30:52 - start find product by id
-""2018-06-14 15:30:52 - Product not found!
-""2018-06-14 15:30:56 - start find product by id
-""2018-06-14 15:30:56 - End find product by id
-""2018-06-14 16:46:06 - start find product by id
-""2018-06-14 16:46:06 - End find product by id
-""2018-06-14 17:15:52 - Starting SpringDemoWebApplication on nminhtu with PID 8572 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 17:15:52 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 17:15:52 - No active profile set, falling back to default profiles: default
-""2018-06-14 17:15:55 - Started SpringDemoWebApplication in 2.842 seconds (JVM running for 3.426)
-""2018-06-14 17:16:06 - start find product by id
-""2018-06-14 17:16:06 - End find product by id
-""2018-06-14 17:16:25 - Starting SpringDemoWebApplication on nminhtu with PID 9976 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
-""2018-06-14 17:16:25 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-""2018-06-14 17:16:25 - No active profile set, falling back to default profiles: default
-""2018-06-14 17:16:28 - Started SpringDemoWebApplication in 3.353 seconds (JVM running for 3.881)
-""2018-06-14 17:34:35 - start find product by id
-""2018-06-14 17:34:35 - Product not found!
+"2018-06-15 17:16:22 - Starting SpringDemoWebApplication on nminhtu with PID 9524 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
+""2018-06-15 17:16:22 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+""2018-06-15 17:16:22 - No active profile set, falling back to default profiles: default
+""2018-06-15 17:16:25 - Started SpringDemoWebApplication in 2.913 seconds (JVM running for 3.366)
+""2018-06-15 17:18:17 - Starting SpringDemoWebApplication on nminhtu with PID 9776 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
+""2018-06-15 17:18:17 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+""2018-06-15 17:18:17 - No active profile set, falling back to default profiles: default
+""2018-06-15 17:18:19 - Started SpringDemoWebApplication in 2.918 seconds (JVM running for 3.357)
+""2018-06-15 17:18:22 - aaaaaaaaaaaaaaa
+""2018-06-15 17:20:17 - Starting SpringDemoWebApplication on nminhtu with PID 11012 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
+""2018-06-15 17:20:17 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+""2018-06-15 17:20:17 - No active profile set, falling back to default profiles: default
+""2018-06-15 17:20:20 - Started SpringDemoWebApplication in 2.873 seconds (JVM running for 3.346)
+""2018-06-15 17:20:27 - access home page!
+""2018-06-15 17:20:27 - access login page!
+""2018-06-15 17:20:29 - access login page!
+""2018-06-15 17:20:29 - access login page!
+""2018-06-15 17:20:34 - access login page!
+""2018-06-15 17:20:34 - access login page!
+""2018-06-15 17:23:39 - access login page!
+""2018-06-15 17:23:39 - access login page!
+""2018-06-15 17:23:54 - access login page!
+""2018-06-15 17:23:55 - access login page!
+""2018-06-15 17:23:55 - access login page!
+""2018-06-15 17:24:08 - access login page!
+""2018-06-15 17:24:08 - access login page!
+""2018-06-15 17:32:03 - Starting SpringDemoWebApplication on nminhtu with PID 10244 (D:\DA-Training-java-minhtu.git\target\classes started by nminhtu in D:\DA-Training-java-minhtu.git)
+""2018-06-15 17:32:03 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+""2018-06-15 17:32:03 - No active profile set, falling back to default profiles: default
+""2018-06-15 17:32:06 - Started SpringDemoWebApplication in 2.991 seconds (JVM running for 3.452)
+""2018-06-15 17:32:29 - access login page!
+""2018-06-15 17:32:30 - access login page!
+""2018-06-15 17:32:34 - access login page!
+""2018-06-15 17:32:34 - access login page!
 "

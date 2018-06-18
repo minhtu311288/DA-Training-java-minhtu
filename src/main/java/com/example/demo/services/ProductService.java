@@ -8,6 +8,6 @@ import com.example.demo.model.Products;
 
 public interface ProductService {
 	List<Products> findAll();
-//	String save();
 	Optional<Products> findById(UUID uUID);
+	String save();
 }
