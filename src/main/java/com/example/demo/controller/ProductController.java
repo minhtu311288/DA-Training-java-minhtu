@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.ProductDTO;
 import com.example.demo.exception.ProductNotFoundException;
 import com.example.demo.model.Products;
 import com.example.demo.services.ProductService;
@@ -32,7 +32,7 @@ public class ProductController extends BaseController {
 	ProductService productservice;
 	
 	@RequestMapping(value = BASE_URL + All_PRODUCT,method = RequestMethod.GET)
-	public ResponseEntity<List<Products>> getAllLocations(){
+	public ResponseEntity<?> getAllLocations(){
 		
 		LogUtil.debug(this.getClass(),"start list all products");
 		
@@ -49,12 +49,11 @@ public class ProductController extends BaseController {
 		
 		LogUtil.debug(this.getClass(),"start find product by id");
 		
-		Optional<Products> product =  productservice.findById(UUID);
-		
+		ProductDTO product =  productservice.findById(UUID);
+
 		if (product == null) {
 			throw new ProductNotFoundException("not found product!");
 		}
-		
 		LogUtil.debug(this.getClass(),"End find product by id");
 		
 		return new ResponseEntity<>(product, HttpStatus.OK);

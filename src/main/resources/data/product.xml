@@ -15,8 +15,8 @@
             <column name="item" type="int"/>
             <column name="class_field" type="varchar(50)"/>
             <column name="inventory" type="varchar(50)"/>
-            <column name="create_at" type="datetime"/>
-            <column name="modified_at" type="datetime"/>
+            <column name="create_at" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="modified_at" type="TIMESTAMP WITH TIME ZONE"/>
         </createTable>
     </changeSet>   
 </databaseChangeLog>

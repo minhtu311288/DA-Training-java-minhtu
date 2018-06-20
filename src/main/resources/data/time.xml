@@ -15,8 +15,8 @@
             <column name="year" type="int"/>
             <column name="month" type="int"/>
             <column name="quater" type="int"/>
-            <column name="create_at" type="datetime"/>
-            <column name="modified_at" type="datetime"/>
+            <column name="create_at" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="modified_at" type="TIMESTAMP WITH TIME ZONE"/>
         </createTable>
     </changeSet>   
 </databaseChangeLog>

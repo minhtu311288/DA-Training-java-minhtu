@@ -16,8 +16,8 @@
             <column name="location_id" type="uuid"/>
             <column name="time_id" type="uuid"/>
             <column name="dollars" type="int"/>
-            <column name="create_at" type="datetime"/>
-            <column name="modified_at" type="datetime"/>
+            <column name="create_at" type="timestamp"/>
+            <column name="modified_at" type="timestamp"/>
         </createTable>
     </changeSet>   
 </databaseChangeLog>

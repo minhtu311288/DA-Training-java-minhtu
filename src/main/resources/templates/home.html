@@ -1,15 +1,25 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-   <head>
-      <title th:utext="${title}"></title>
-   </head>
-    
-   <body>
-    
-      <!-- Include _menu.html -->
-      <th:block th:include="/_menu"></th:block>  
-       
-      <h2>Message : <span th:utext="${message}"></span></h2>
-       
-   </body>
+<head>
+    <title>Home page</title>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Home page</h1>
+        <h2>1. Visit <a th:href="@{/admin}">Admin page (Spring Security protected, Need Admin Role)</a></h2>
+        <h2>2. Visit <a th:href="@{/user}">User page (Spring Security protected, Need User Role)</a></h2>
+        <h2>3. Visit <a th:href="@{/product/all}">product page</a></h2>
+        <h2>3. Visit <a th:href="@{/location/all}">location page</a></h2>
+        <h2>3. Visit <a th:href="@{/time/all}">time page</a></h2>
+        <h2>3. Visit <a th:href="@{/sale/all}">sale page</a></h2>
+    </div>
+
+</div>
+<!-- /.container -->
+
+</body>
 </html>

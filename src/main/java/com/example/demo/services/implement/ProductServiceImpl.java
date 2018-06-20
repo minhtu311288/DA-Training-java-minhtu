@@ -1,20 +1,26 @@
 package com.example.demo.services.implement;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.dto.ProductDTO;
 import com.example.demo.model.Products;
 import com.example.demo.respo.productlist;
 import com.example.demo.services.ProductService;
+import com.example.demo.utils.LogUtil;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+
 @Service
 public class ProductServiceImpl implements ProductService {
-
+	
+	private static final String DATE_FORMAT = "dd-M-yyyy hh:mm:ss a";
+	
 	@Autowired
     private productlist listproduct;
 
@@ -32,21 +38,32 @@ public class ProductServiceImpl implements ProductService {
 		
 		return products;
 	}
+    
     @Override
-    public Optional<Products> findById(UUID UUID) {
+    public ProductDTO findById(UUID UUID) {
     	
-    	Optional<Products> products = listproduct.findById(UUID);
+    	Products products = listproduct.findById(UUID).get();
     	
-    	if (!products.isPresent()) return null;
+    	ModelMapper modelMapper = new ModelMapper();
     	
-		return products;
+		ProductDTO productDto = modelMapper.map(products, ProductDTO.class);
+		
+		LogUtil.debug(this.getClass(),"show product inpocess");
+    	
+    	if (products == null) { 
+    		return null;
+    	}
+    	
+		return productDto;
     }
     @Override
 	public String save(){
     	
 		UUID uuid = UUID.randomUUID();
 		
-		Products pr = new Products(uuid,1, "class field","inven", new Date(), new Date());
+        Date date = new Date();
+        
+		Products pr = new Products(uuid,1, "class field","inven", date, date);
 		
 		listproduct.save(pr);
 		
