@@ -36,11 +36,11 @@ public class ProductController extends BaseController {
 		
 		LogUtil.debug(this.getClass(),"start list all products");
 		
-		List<Products> products = productservice.findAll();
+		ProductDTO products = productservice.getAllProduct();
 		
 		LogUtil.debug(this.getClass(),"end list all products");
 		
-		return new ResponseEntity<List<Products>>(products, HttpStatus.OK);
+		return new ResponseEntity(products, HttpStatus.OK);
 		
 	}
 	

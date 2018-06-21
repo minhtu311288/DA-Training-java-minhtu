@@ -10,4 +10,5 @@ public interface ProductService {
 	List<Products> findAll();
 	ProductDTO findById(UUID uUID);
 	String save();
+	ProductDTO getAllProduct();
 }
