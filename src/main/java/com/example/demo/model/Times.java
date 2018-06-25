@@ -8,8 +8,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.joda.time.DateTime;
-
 @Entity
 @Table(name="time")
 public class Times {
@@ -31,8 +29,20 @@ public class Times {
 	
 	@Column(name = "modified_at")
 	private Date modified_at;
-
 	
+	public Times() {
+		
+	}
+	
+	public Times(UUID uuid, int y, int m, int q, Date date, Date date2) {
+		this.time_id = uuid;
+		this.year = y;
+		this.month = m;
+		this.quater = q;
+		this.create_at = date;
+		this.modified_at = date2;
+	}
+
 	public UUID getTime_id() {
 		return time_id;
 	}

@@ -22,34 +22,34 @@ public class ProductController extends BaseController {
 
 	public static final String BASE_URL = "/product/";
 	
-	public static final String GET_PRODUCT_BY_ID_URL = "/{id}";
+	public static final String GET_PRODUCT_BY_ID_URL = BASE_URL + "/{id}";
 	
-	public static final String ADD_PRODUCT = "/addproduct";
+	public static final String ADD_PRODUCT = BASE_URL + "/addproduct";
 	
-	public static final String All_PRODUCT = "/all";
+	public static final String All_PRODUCT = BASE_URL + "/all";
 	
 	@Autowired
 	ProductService productservice;
 	
-	@RequestMapping(value = BASE_URL + All_PRODUCT,method = RequestMethod.GET)
-	public ResponseEntity<?> getAllLocations(){
+	@RequestMapping(value = All_PRODUCT,method = RequestMethod.GET)
+	public ResponseEntity<?> getAllProduct(){
 		
 		LogUtil.debug(this.getClass(),"start list all products");
 		
-		ProductDTO products = productservice.getAllProduct();
+		List<Products> products = productservice.getProducts();
 		
 		LogUtil.debug(this.getClass(),"end list all products");
 		
-		return new ResponseEntity(products, HttpStatus.OK);
+		return new ResponseEntity<>(products, HttpStatus.OK);
 		
 	}
 	
-	@RequestMapping(value = BASE_URL + GET_PRODUCT_BY_ID_URL)
+	@RequestMapping(value = GET_PRODUCT_BY_ID_URL)
 	public ResponseEntity<?> getProductByID(@PathVariable("id") UUID UUID) throws Exception {
 		
 		LogUtil.debug(this.getClass(),"start find product by id");
 		
-		ProductDTO product =  productservice.findById(UUID);
+		ProductDTO product =  productservice.getProductByID(UUID);
 
 		if (product == null) {
 			throw new ProductNotFoundException("not found product!");
@@ -59,7 +59,7 @@ public class ProductController extends BaseController {
 		return new ResponseEntity<>(product, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = BASE_URL + ADD_PRODUCT)
+	@RequestMapping(value = ADD_PRODUCT)
 	public ResponseEntity<String> addProduct() throws Exception {
 		
 		LogUtil.debug(this.getClass(),"start add new product");

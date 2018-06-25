@@ -3,8 +3,6 @@ package com.example.demo.dto;
 import java.util.Date;
 import java.util.UUID;
 
-import org.joda.time.DateTime;
-
 public class TimeDTO {
 private UUID time_id;
 

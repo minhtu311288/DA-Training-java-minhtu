@@ -50,7 +50,9 @@ public class ProductDTO {
 	}
 
 	public void setInventory(String inventory) {
+		
 		this.inventory = inventory;
+		
 	}
 
 	public String getCreate_at() throws ParseException {
@@ -61,15 +63,22 @@ public class ProductDTO {
 	}
 
 	public void setCreate_at(Date create_at) {
+		
 		this.create_at = create_at;
+		
 	}
 
-	public Date getModified_at() {
-		return modified_at;
+	public String getModified_at() throws ParseException {
+		
+		String timeformat = DateTimeUtil.datetimeformat(modified_at);
+		
+		return timeformat;
 	}
 
 	public void setModified_at(Date modified_at) {
+		
 		this.modified_at = modified_at;
+		
 	}
 	
 }

@@ -1,6 +1,9 @@
 package com.example.demo.model;
 
 
+import java.util.Date;
+import java.util.UUID;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -46,16 +49,14 @@ public class Sales {
 		
 	}
 	
-	public Sales(String id, @NotNull Products product, @NotNull Times time, @NotNull Locations location, int dollars) {
-	super();
-	this.id = id;
-	this.product = product;
-	this.time = time;
-	this.location = location;
-	this.dollars = dollars;
-}
-
-
+	public Sales(String id, Products product, Times time, Locations location, int dollars) {
+		super();
+		this.id = id;
+		this.product = product;
+		this.time = time;
+		this.location = location;
+		this.dollars = dollars;
+	}
 
 	public Products getProduct() {
 		return product;

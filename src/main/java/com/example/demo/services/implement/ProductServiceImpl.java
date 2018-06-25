@@ -6,11 +6,11 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.dto.ProductDTO;
 import com.example.demo.model.Products;
-import com.example.demo.query.QProduct;
+import com.example.demo.model.QProducts;
 import com.example.demo.respo.productlist;
 import com.example.demo.services.ProductService;
 import com.example.demo.utils.LogUtil;
-import com.querydsl.jpa.impl.JPAQuery;
+import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import java.util.Date;
 import java.util.List;
@@ -68,19 +68,39 @@ public class ProductServiceImpl implements ProductService {
 		
         Date date = new Date();
         
-		Products pr = new Products(uuid,1, "class field","inven", date, date);
+		Products pr = new Products(uuid,1, "class 1","inven 1", date, date);
 		
 		listproduct.save(pr);
 		
 		return uuid.toString();
 	}
     
-    public ProductDTO getAllProduct() {
+    @Override
+    public List<Products> getProducts() {
     	
-    	QProduct qProduct = QProduct.product;
+		QProducts qProduct = QProducts.products;
 		
-		JPAQuery query = (JPAQuery) new JPAQuery(em).from(qProduct);
+		JPAQueryFactory factory = new JPAQueryFactory(em);
 		
-		return query.list(qProduct);
-    }
+		List<Products> products = factory.selectFrom(qProduct).fetch();
+		
+		return products;
+		
+	}
+    
+    @Override
+    public ProductDTO getProductByID(UUID UUID) {
+    	
+		QProducts qProduct = QProducts.products;
+		
+		JPAQueryFactory factory = new JPAQueryFactory(em);
+		
+		Products products = factory.selectFrom(qProduct).where(qProduct.product_id.eq(UUID)).fetchOne();
+		
+		ModelMapper modelMapper = new ModelMapper();
+    	
+		ProductDTO productDto = modelMapper.map(products, ProductDTO.class);
+		
+		return productDto;
+	}
 }

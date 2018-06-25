@@ -15,7 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private AccessDeniedHandler accessDeniedHandler;
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-    	LogUtil.error(this.getClass(),"bbbbbbbbbbbbbbbbbbbbbbbbbbb");
+    	LogUtil.error(this.getClass(),"Create role in system");
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "/home").permitAll()
@@ -33,10 +33,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().accessDeniedHandler(accessDeniedHandler);
     }
 
-
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-    	LogUtil.error(this.getClass(),"aaaaaaaaaaaaaaaaaaaaaa");
+    	LogUtil.error(this.getClass(),"Config role in system");
         auth.inMemoryAuthentication()
                 .withUser("user").password("{noop}123").roles("USER")
                 .and()

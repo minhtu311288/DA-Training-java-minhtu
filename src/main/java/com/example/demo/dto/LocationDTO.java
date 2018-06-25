@@ -1,8 +1,7 @@
 package com.example.demo.dto;
 
+import java.util.Date;
 import java.util.UUID;
-
-import org.joda.time.DateTime;
 
 public class LocationDTO {
 	
@@ -12,9 +11,9 @@ public class LocationDTO {
 	
 	private String city;
 	
-	private DateTime create_at;
+	private Date create_at;
 	
-	private DateTime modified_at;
+	private Date modified_at;
 
 	public UUID getLocation_id() {
 		return location_id;
@@ -40,19 +39,19 @@ public class LocationDTO {
 		this.city = city;
 	}
 
-	public DateTime getCreate_at() {
+	public Date getCreate_at() {
 		return create_at;
 	}
 
-	public void setCreate_at(DateTime create_at) {
+	public void setCreate_at(Date create_at) {
 		this.create_at = create_at;
 	}
 
-	public DateTime getModified_at() {
+	public Date getModified_at() {
 		return modified_at;
 	}
 
-	public void setModified_at(DateTime modified_at) {
+	public void setModified_at(Date modified_at) {
 		this.modified_at = modified_at;
 	}
 	
